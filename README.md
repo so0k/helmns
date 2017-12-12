@@ -26,7 +26,7 @@ Since `helmns` and `helmls` are written in Bash, they can run in shells that sup
   curl https://github.com/so0k/helmns/archive/v0.0.1.tar.gz | tar -xz
   ```
 
-- Either save alls somewhere on your `PATH` (like `/usr/local/bin`):
+- Either save all somewhere on your `PATH` (like `/usr/local/bin`):
   
   ```bash
   sudo mv helmns-0.0.1/helm* /usr/local/bin/
