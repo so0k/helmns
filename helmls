@@ -9,5 +9,5 @@ set -eou pipefail
 for ns in $(kubectl get deploy --all-namespaces -l app=helm,name=tiller -o=jsonpath="{.items[*].metadata.namespace}")
 do 
   echo NAMESPACE: $ns
-  helm --tiller-namespace $ns ls
+  helm --tiller-namespace $ns ls "$@"
 done
