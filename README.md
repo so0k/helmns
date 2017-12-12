@@ -21,10 +21,19 @@ This is meant to simplify management for Kubernetes clusters with RBAC enabled a
 Since `helmns` and `helmls` are written in Bash, they can run in shells that support POSIX standards.
 
 - Download the `helmns` and `helmls` scripts
-- Either:
-  - save all somewhere in your `PATH`,
-  - or save to a directory, then create symlinks from somewhere in your `PATH`, like `/usr/local/bin`
-- Make scripts executable (`chmod +x ...`)
+  
+  ```bash
+  curl https://github.com/so0k/helmns/archive/v0.0.1.tar.gz | tar -xz
+  ```
+
+- Either save alls somewhere on your `PATH` (like `/usr/local/bin`):
+  
+  ```bash
+  sudo mv helmns-0.0.1/helm* /usr/local/bin/
+  rm -rf helmns-0.0.1
+  ```
+
+- Or move somewhere else and create symlinks yourself
 
 -----
 
