@@ -23,7 +23,7 @@ Since `helmns` and `helmls` are written in Bash, they can run in shells that sup
 - Download the `helmns` and `helmls` scripts
   
   ```bash
-  curl https://github.com/so0k/helmns/archive/v0.0.1.tar.gz | tar -xz
+  curl -L https://github.com/so0k/helmns/archive/v0.0.1.tar.gz | tar -xz
   ```
 
 - Either save all somewhere on your `PATH` (like `/usr/local/bin`):
